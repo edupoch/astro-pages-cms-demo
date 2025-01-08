@@ -10,9 +10,7 @@ const posts = await getCollection("blog");
     {
       posts.map((post) => (
         <li>
-          <a href={`/astro-pages-cms-demo/blog/${post.id}`}>
-            {post.data.title}
-          </a>
+          <a href={`/blog/${post.id}`}>{post.data.title}</a>
         </li>
       ))
     }
