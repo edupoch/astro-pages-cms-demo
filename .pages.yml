@@ -1,0 +1,17 @@
+media: files/media
+content:
+  - name: blog
+    label: Blog
+    path: src/collections/blog
+    type: collection
+    fields:
+      - name: title
+        label: Título
+        type: string
+      - name: author
+        label: Autor
+        type: string
+      - name: body
+        label: Contenido
+        type: rich-text
+      
