@@ -1,48 +1,50 @@
-# Astro Starter Kit: Basics
+# Prueba conectando Astro, Pages CMS y Github Pages
 
-```sh
-npm create astro@latest -- --template basics
+Con este proyecto queremos probar a conectar Astro con dos plataformas:
+
+- Pages CMS: nos permite editar los archivos de markdown de los contenidos a través de una interfaz web. Los cambios editados allí se reflejan en el repositorio de Github.
+- Github Pages: nos permite publicar el contenido estático de la web en sus servidores.
+
+## Lanzar el proyecto en local
+
+Antes de empezar, ejecutamos:
+
+```bash
+npm install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Para lanzar el proyecto en local, ejecutamos:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+npm run dev
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Ficheros de interés
 
-## 🧞 Commands
+- `src/pages/blog/index.astro`: página que muestra todos los artículos de blog.
+- `src/pages/blog/[id].astro`: página que muestra un artículo de blog.
+- `src/collections/blog/1.md`: un artículo de prueba que se edita en Pages CMS y se despliega en Github Pages.
+- `src/content.config.ts`: define la estructura de los contenidos de la web.
+- `.pages.yml`: define la estructura de los campos del panel de Pages CMS.
+- `.github/workflows/deploy.yml`: define los pasos para hacer el deploy en Github Pages.
+- `src/astro.config.mjs`: establece la configuración de Astro y, en este caso, nos permite definir el dominio personalizado de Github Pages.
 
-All commands are run from the root of the project, from a terminal:
+## Artículos de interés
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Colecciones en Astro:  
+https://docs.astro.build/en/guides/content-collections/
 
-## 👀 Want to learn more?
+Usar markdown para guardar contenido en Astro:  
+https://docs.astro.build/en/guides/markdown-content/
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Instalar Pages CMS en el repositorio Github:  
+https://pagescms.org/docs/#install-or-deploy-your-own-version
+
+Configurar los campos de Pages CMS:  
+https://pagescms.org/docs/configuration/
+
+Deploy de un proyecto Astro en Github Pages:  
+https://docs.astro.build/en/guides/deploy/github/
+
+Configurar un dominio personalizado en Github Pages:  
+https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain
