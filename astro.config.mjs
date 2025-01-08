@@ -3,5 +3,5 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "http://astro-pages-cms.estudiocaravana.com",
+  site: "https://astro-pages-cms.estudiocaravana.com",
 });
