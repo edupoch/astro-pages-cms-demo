@@ -1,9 +1,9 @@
 # Prueba conectando Astro, Pages CMS y Github Pages
 
-Con este proyecto queremos probar a conectar Astro con dos plataformas:
+Con este proyecto queremos probar a conectar [Astro](https://astro.build/) con dos plataformas:
 
-- Pages CMS: nos permite editar los archivos de markdown de los contenidos a través de una interfaz web. Los cambios editados allí se reflejan en el repositorio de Github.
-- Github Pages: nos permite publicar el contenido estático de la web en sus servidores.
+- [Pages CMS](https://pagescms.org/): nos permite editar los archivos de markdown de los contenidos a través de una interfaz web. Los cambios editados allí se reflejan en el repositorio de Github.
+- [Github Pages](https://pages.github.com/): nos permite publicar el contenido estático de la web en sus servidores.
 
 ## Lanzar el proyecto en local
 
