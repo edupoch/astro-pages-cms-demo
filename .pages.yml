@@ -15,7 +15,7 @@ content:
         label: Contenido
         type: rich-text
     view:
-      fields: [ title ]
+      fields: [ title, author ]
       primary: title
       sort: [ title ]
       default:
